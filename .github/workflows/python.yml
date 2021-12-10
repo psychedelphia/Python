@@ -14,10 +14,11 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.7  # 3.6 , 3.7 or 3.8
+          python-version: 3.8  # 3.6 , 3.7 or 3.8
       - name: Upgrade Pip
         run: |
           ls -al
           cd ./master
           ls -al
           python creating_file.py
+          ls -al
