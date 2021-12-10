@@ -1,0 +1,23 @@
+name: Android APK  # Name
+on: [push, pull_request]
+
+jobs:
+  build-android:
+    name: Build for Android  # Name
+    runs-on: ubuntu-latest  # OS
+
+    steps:
+      - name: Actions Checkout
+        uses: actions/checkout@v2
+        with:
+          path: master/  # /home/runner/work/Android-APP/Android-APP/master
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7  # 3.6 , 3.7 or 3.8
+      - name: Upgrade Pip
+        run: |
+          ls -al
+          cd ./master
+          ls -al
+          python creating_file.py
