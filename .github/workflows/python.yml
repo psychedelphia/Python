@@ -19,5 +19,5 @@ jobs:
       - name: Upgrade Pip
         uses: canastro/copy-file-action@master
         with:
-          source: "creating_file.py"
+          source: "/master/creating_file.py"
           target: "/master/src/creating_file.py"
