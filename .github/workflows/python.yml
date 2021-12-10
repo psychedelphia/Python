@@ -17,9 +17,7 @@ jobs:
         with:
           python-version: 3.8  # 3.6 , 3.7 or 3.8
       - name: Upgrade Pip
-        run: |
-          ls -al
-          cd ./master
-          ls -al
-          python creating_file.py
-          cp creating_file.py /src/creating_file.py
+        uses: canastro/copy-file-action@master
+        with:
+          source: "creating_file.py"
+          target: "/master/src/creating_file.py"
