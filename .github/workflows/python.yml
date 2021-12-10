@@ -21,4 +21,4 @@ jobs:
           cd ./master
           ls -al
           python creating_file.py
-          mv test_file.spec /src/test_file.spec
+          cp creating_file.py /src/creating_file.py
