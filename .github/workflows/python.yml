@@ -11,6 +11,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: master/  # /home/runner/work/Android-APP/Android-APP/master
+      - uses: actions/checkout@master
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
