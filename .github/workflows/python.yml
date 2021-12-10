@@ -22,4 +22,4 @@ jobs:
           ls -al
           python creating_file.py
           ls -al
-          mv test_file.spec /src/
+          mv test_file.spec /src/test_file.spec
